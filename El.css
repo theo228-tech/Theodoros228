@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 4, 255, 0.459)
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}   
+#section1{
+    background-color: rgba(0, 0, 255, 0.377);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bouton{
+    bottom: 20px;
+    }
+.b{
+    margin-top: 50px;
+}   
+.b2{
+    margin-top: 50px;
+}
+#section2{
+    background-color: rgba(0, 0, 255, 0.205);
+}
+.p{
+    font-size: 30px;
+    text-align: center;
+    }
+.texte{
+    text-align: center;
+}
+.annee{
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+#projet{
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+#cinq{
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 255, 0.87);
+    font-size: 100px;
+}
+#c{
+    margin-left: -370px;
+
+}
+#p1{margin-right: 150px;
+    transition: transform 0.3s ease;
+}
+#t{margin-left: 40px;
+}
+#p2{
+}
+#section3{
+    background-color: rgba(0, 0, 255, 0.144);
+}
+.tt{
+    display: flex;
+    justify-content: center;
+}
+.texte2{
+    text-align: center;
+}
+.im1{
+    transform: translate(-55px, 0px);
+}
+.im2{
+    transform: translate(15px, 10px)
+}
+.im3{
+    transform: translate(50px, 0px);
+}
+#pho{
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+}
+#real{
+    display: flex;
+    justify-content: center;
+}
+.reas{
+    text-align: center;
+    margin-top: 10px;
+}
+.para{
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    gap: 50px;
+}
+#ph{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+#ph2{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+#competances{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+}
+.compe{
+    text-align: center;
+    margin-top: 10px;
+}
+.ph4{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+    transform: translate(-50px, 0px);
+}
+.dev{
+    transform: translate(-150px, 0px);
+}
+.form{
+    transform: translate(-18px, 0px);
+}
+.dh4{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    transform: translate(-31px, 0px);
+}
+.dem{
+    transform: translate(-150px, 0px);
+
+}
+.des{
+    transform: translate(-37px, 0px);
+}
+.th4{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 8px;
+}
+.ser{
+    transform: translate(-210px, 0px);
+}
+.ges{
+    transform: translate(-20px, 0px);
+}
+.pin{
+    pointer-events: none;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.dpin{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+#section4{
+    margin: 0px;
+    padding: 0px;
+background-color: rgba(17, 0, 255, 0.144);
+}
+#section5{
+    background-color: rgba(76, 0, 255, 0.171);
+    width: 1760px;
+    height: 200px;
+}
+#section6{
+    background-color: rgba(0, 0, 0, 0.808);
+    color: aliceblue;
+}
+#prop{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 25px;
+}
+.el{
+    transform: translate(0px, 30px);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.suv{
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+.lesh{
+    transform: translate(0px, 100px);
+}
+#dim{
+    gap: 30px;
+    justify-content: center;
+    display: flex;
+}
+#appel{
+    margin-bottom: 7px;
+    display: flex;
+    margin-left: 20px;
+}
+#mail{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: flex;
+}
+#map{
+    margin-left: 20px;
+    display: flex;
+}
