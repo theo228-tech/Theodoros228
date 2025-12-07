@@ -1,23 +1,24 @@
 * {
-    margin: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1%;
     background-color: rgba(0, 4, 255, 0.459)
 }
 ul{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
 }
 nav{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 a{
     text-decoration: none;
@@ -28,59 +29,52 @@ button{
     background-color: blue;
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 20px;
+
 }   
 #section1{
     background-color: rgba(0, 0, 255, 0.377);
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
 }
 .bouton{
-    bottom: 20px;
+    bottom: 10px;
     }
 .b{
-    margin-top: 50px;
+    margin-top: 2%;
 }   
 .b2{
-    margin-top: 50px;
+    margin-top: 3%;
 }
 #section2{
     background-color: rgba(0, 0, 255, 0.205);
 }
 .p{
-    font-size: 30px;
+    font-size: 0,5em;
     text-align: center;
     }
 .texte{
     text-align: center;
 }
-.annee{
-    gap: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-}
 #projet{
-    gap: 100px;
+    gap: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    padding-bottom: 20px;
+    font-size: 1.5em;
+    padding-bottom: 10px;
 }
 #cinq{
     margin-bottom: -20px;
     display: flex;
     justify-content: center;
     color: rgba(0, 0, 255, 0.87);
-    font-size: 100px;
+    font-size: 5em;
 }
 #c{
-    margin-left: -370px;
+    margin-left: -290px;
 
 }
 #p1{margin-right: 150px;
@@ -132,14 +126,14 @@ button{
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 1eù;
     margin-bottom: 50px;
 }
 #ph2{
     margin-top:30px;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 1em;
 }
 #competances{
     margin-top: 20px;
@@ -159,7 +153,7 @@ button{
     transform: translate(-50px, 0px);
 }
 .dev{
-    transform: translate(-150px, 0px);
+    transform: translate(-45px, 0px);
 }
 .form{
     transform: translate(-18px, 0px);
@@ -172,7 +166,7 @@ button{
     transform: translate(-31px, 0px);
 }
 .dem{
-    transform: translate(-150px, 0px);
+    transform: translate(-45px, 0px);
 
 }
 .des{
@@ -185,19 +179,19 @@ button{
     margin-top: 8px;
 }
 .ser{
-    transform: translate(-210px, 0px);
+    transform: translate(-105px, 0px);
 }
 .ges{
     transform: translate(-20px, 0px);
 }
 .pin{
     pointer-events: none;
-    width: 300px;
+    width: 13em;
     display: flex;
     justify-content: center;
 }
 .dpin{
-    gap: 20px;
+    gap: 2em;
     display: flex;
     justify-content: center;
 }
@@ -208,8 +202,6 @@ background-color: rgba(17, 0, 255, 0.144);
 }
 #section5{
     background-color: rgba(76, 0, 255, 0.171);
-    width: 1760px;
-    height: 200px;
 }
 #section6{
     background-color: rgba(0, 0, 0, 0.808);
