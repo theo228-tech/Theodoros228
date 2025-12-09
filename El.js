@@ -1,4 +1,4 @@
-("BIENVENUE SUR EL THEODOROS");
+alert("BIENVENUE SUR EL THEODOROS");
 const bouton = document.getElementById("btnZoom");
 
 bouton.addEalertventListener("click", () => {
