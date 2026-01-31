@@ -1,4 +1,3 @@
-/* ===== SCROLL ANIMATION ===== */
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
@@ -62,4 +61,3 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
             console.error(error);
         });
 });
-

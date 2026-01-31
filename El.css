@@ -27,7 +27,6 @@ body {
     transition: background 0.4s, color 0.4s;
 }
 header {
-    font-size: 15px;
     padding: 20px 8%;
     background: var(--card);
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -37,7 +36,7 @@ header {
 }
 
 .titre {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -102,11 +101,10 @@ nav ul a:hover::after {
 
 .div1 {
     max-width: 550px;
-    font-style: oblique;
 }
 
 .mini {
-    font-size: 20px;
+    color: var(--primary);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
