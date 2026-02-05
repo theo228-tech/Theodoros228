@@ -31,33 +31,3 @@ toggle.addEventListener("click", () => {
     toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
-(function () {
-    emailjs.init("-dvweVbce2H2d78xD"); 
-})();
-
-
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const params = {
-        nom: document.getElementById("nom").value,
-        prenom: document.getElementById("prenom").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
-
-    emailjs
-        .send(
-            "service_7dimtzz",    
-            "template_q370ycq", 
-            params
-        )
-        .then(function () {
-            alert("✅ Message envoyé avec succès !");
-            document.getElementById("contactForm").reset();
-        })
-        .catch(function (error) {
-            alert("❌ Erreur lors de l’envoi, réessaie.");
-            console.error(error);
-        });
-});
