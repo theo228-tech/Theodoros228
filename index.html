@@ -18,7 +18,7 @@
             <li><a href="#section2">A propos</a></li>
             <li><a href="#section3">Services</a></li>
             <li><a href="#section4">Mes réalisations</a></li>
-            <li><a href="#competances">Mes compétances</a></li>
+            <li><a href="#competances">Mes compétences</a></li>
         </ul>
         <a class="cv-btn" href="CV Theodore.pdf" download>Télécharger mon CV</a>
     </nav>
@@ -34,16 +34,8 @@
             Découvrez mes créations et vivez l'expérience numérique à travers mes projets.<br>
             Je conçois des solutions web modernes et efficaces, alliant créativité et technologie.
         </p>
-        <a href="#section2"
-       class="b3"
-       rel="noopener noreferrer">
-        En savoir plus
-    </a>
-        <a href="#section4"
-       class="b3"
-       rel="noopener noreferrer">
-        Mes realisations
-    </a>
+        <a href="#section2" class="b3" rel="noopener noreferrer">En savoir plus</a>
+        <a href="#section4" class="b3" rel="noopener noreferrer">Mes réalisations</a>
     </div>
     <img src="ma photo.png" class="photo" alt="Photo Théodore">
 </section>
@@ -52,7 +44,7 @@
     <h2>🔵 A propos de moi</h2>
     <p class="texte">
         Je suis passionné par le développement web et la création d’expériences numériques modernes.
-        HTML, CSS, JAVASCRIPT et Responsive design.
+        Expertise en Laravel, React, Flutter et gestion de bases de données.
     </p>
 </section>
 
@@ -60,38 +52,68 @@
     <h2>Mes Services</h2>
     <div class="services">
         <div class="card">UI / UX Design</div>
-        <div class="card">Développement Web</div>
-        <div class="card">Formations</div>
+        <div class="card">Développement Web & Mobile</div>
+        <div class="card">Formations & Sérigraphie</div>
     </div>
 </section>
 
 <section id="section4">
-    <h2>Mes realisations</h2>
+    <h2>Mes réalisations</h2>
     <div class="realisations">
-        <img src="Theodorose design.png">
-        <img src="Design Théodore.png">
-        <img src="d-clic design.png">
-        <img src="El design.png">
+        <img src="Theodorose design.png" alt="Design 1">
+        <img src="Design Théodore.png" alt="Design 2">
+        <img src="d-clic design.png" alt="Design 3">
+        <img src="El design.png" alt="Design 4">
     </div>
-     <div class="bilio">
-    <a href="https://bibliotheque-theodoros.xo.je"
-       class="b3"
-       target="_blank"
-       rel="noopener noreferrer">
-        Voir ma bibliothèque en ligne
-    </a>
-</div>
+    <div class="bilio">
+        <a href="https://bibliotheque-theodoros.xo.je" class="b3" target="_blank" rel="noopener noreferrer">
+            Voir ma bibliothèque en ligne
+        </a>
+    </div>
 
-    <h2 id="competances">Mes Compétances</h2>
+    <h2 id="competances">Mes Compétences</h2>
     <div class="skills">
-        <p>Développement Web <span>70%</span></p>
-        <progress value="70" max="100"></progress>
+        <div class="skill-group">
+            <h3>Web & Mobile</h3>
+            <p>Laravel API Rest <span>85%</span></p>
+            <progress value="85" max="100"></progress>
 
-        <p>Formations <span>50%</span></p>
-        <progress value="50" max="100"></progress>
+            <p>React Vite <span>75%</span></p>
+            <progress value="75" max="100"></progress>
 
-        <p>Sérigraphie <span>50%</span></p>
-        <progress value="50" max="100"></progress>
+            <p>Flutter & Dart <span>80%</span></p>
+            <progress value="80" max="100"></progress>
+
+            <p>PHP <span>85%</span></p>
+            <progress value="85" max="100"></progress>
+            
+            <p>MIT APP Inventor <span>90%</span></p>
+            <progress value="90" max="100"></progress>
+        </div>
+
+        <div class="skill-group">
+            <h3>Bases de données & Cloud</h3>
+            <p>PostgreSQL <span>75%</span></p>
+            <progress value="75" max="100"></progress>
+
+            <p>MySQL <span>80%</span></p>
+            <progress value="80" max="100"></progress>
+
+            <p>SQLite <span>70%</span></p>
+            <progress value="70" max="100"></progress>
+
+            <p>Firebase <span>65%</span></p>
+            <progress value="65" max="100"></progress>
+        </div>
+
+        <div class="skill-group">
+            <h3>Autres</h3>
+            <p>CMS (WordPress, etc.) <span>70%</span></p>
+            <progress value="70" max="100"></progress>
+
+            <p>Sérigraphie <span>50%</span></p>
+            <progress value="50" max="100"></progress>
+        </div>
     </div>
 </section>
 
@@ -101,26 +123,15 @@
     <h2 class="savoir">Contactez-moi</h2>
     <p>Laissez-moi un message</p>
 
-<form 
-  id="contactForm"
-  action="https://formspree.io/f/mwvnebva"
-  method="POST"
->
+<form id="contactForm" action="https://formspree.io/f/mwvnebva" method="POST">
     <input type="text" name="nom" placeholder="Nom" required>
     <input type="text" name="prenom" placeholder="Prénom" required>
-
     <input type="email" name="email" placeholder="Votre email" required>
-
     <textarea name="message" placeholder="Votre message" required></textarea>
-
     <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
-
     <input type="hidden" name="_language" value="fr">
-
     <input type="hidden" name="_next" value="merci.html">
-
     <input type="text" name="_gotcha" style="display:none">
-
     <button type="submit">Envoyer</button>
 </form>
 

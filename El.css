@@ -25,7 +25,9 @@ body {
     background: var(--bg);
     color: var(--text);
     transition: background 0.4s, color 0.4s;
+    line-height: 1.6;
 }
+
 header {
     padding: 20px 8%;
     background: var(--card);
@@ -90,7 +92,6 @@ nav ul a:hover::after {
     box-shadow: 0 12px 30px rgba(37,99,235,0.4);
 }
 
-
 #section1 {
     display: flex;
     align-items: center;
@@ -120,32 +121,10 @@ nav ul a:hover::after {
     margin-bottom: 25px;
 }
 
-.b, .b2 {
-    padding: 12px 28px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s;
-}
-
-.b {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
-}
-
-.b2 {
-    background: transparent;
-    border: 2px solid var(--primary);
-    color: var(--primary);
-}
-
-.b:hover, .b2:hover {
-    transform: translateY(-4px);
-}
-
 .photo {
     width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 50%;
     border: 6px solid var(--secondary);
     box-shadow: 0 25px 60px rgba(0,0,0,0.25);
@@ -159,13 +138,6 @@ section h2 {
     font-size: 34px;
     text-align: center;
     margin-bottom: 15px;
-}
-
-.texte, .texte2, .reas, .compe {
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
-    color: var(--muted);
 }
 
 .services {
@@ -210,40 +182,63 @@ section h2 {
     display: inline-block;
     padding: 14px 30px;
     border-radius: 30px;
-    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     font-weight: 600;
     text-decoration: none;
     box-shadow: 0 15px 35px rgba(37,99,235,0.4);
     transition: transform 0.3s, box-shadow 0.3s;
-    margin-top: 20px;
-    flex: 1;
+    margin-top: 10px;
 }
 
 .b3:hover {
     transform: translateY(-4px);
     box-shadow: 0 25px 50px rgba(56,189,248,0.6);
 }
-/*.biblio {
-    display: flex;
-    margin-top: 50px;
+
+.bilio {
+    text-align: center;
+    margin-top: 30px;
 }
-*/
+
 .skills {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto 0;
+}
+
+.skill-group {
+    margin-bottom: 30px;
+}
+
+.skill-group h3 {
+    margin-bottom: 15px;
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    display: inline-block;
 }
 
 .skills p {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 progress {
     width: 100%;
     height: 12px;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e2e8f0;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    border-radius: 10px;
 }
 
 footer {
@@ -266,6 +261,7 @@ footer textarea {
     border-radius: 12px;
     border: none;
     outline: none;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 footer button {
@@ -290,17 +286,6 @@ footer button:hover {
     color: #9ca3af;
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 @media (max-width: 768px) {
     #section1 {
         flex-direction: column;
@@ -309,5 +294,9 @@ footer button:hover {
     nav {
         flex-direction: column;
         gap: 15px;
+    }
+    .photo {
+        width: 200px;
+        height: 200px;
     }
 }
