@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - EL THEODOROS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">EL THEODOROS</span>
+                </div>
+                
+                <nav class="nav-main">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="about.html" class="nav-link">À propos</a></li>
+                        <li><a href="projects.html" class="nav-link active">Projets</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Mes Projets</h1>
+            <p>Découvrez les réalisations sur lesquelles j'ai travaillé</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid-large">
+                <!-- Project 1 - Bibliothèque -->
+                <div class="project-card-large" data-category="web">
+                    <div class="project-image-large" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-details">
+                        <div class="project-tag">Web</div>
+                        <h3>Bibliothèque en ligne</h3>
+                        <p>Plateforme complète de gestion et consultation de bibliothèque en ligne. Système de recherche, réservation et suivi des emprunts avec tableau de bord administrateur.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">API Rest</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://bibliotheque-theodoros.xo.je" target="_blank" class="btn btn-small" rel="noopener noreferrer">Voir le site</a>
+                            <a href="contact.html" class="btn btn-small btn-secondary">Plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Application Mobile -->
+                <div class="project-card-large" data-category="mobile">
+                    <div class="project-image-large" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="project-details">
+                        <div class="project-tag">Mobile</div>
+                        <h3>Application Mobile Flutter</h3>
+                        <p>Application mobile cross-platform développée avec Flutter & Dart pour offrir une expérience utilisateur fluide sur iOS et Android.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">API Rest</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="contact.html" class="btn btn-small">Plus d'infos</a>
+                            <a href="contact.html" class="btn btn-small btn-secondary">Me contacter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Solutions Laravel -->
+                <div class="project-card-large" data-category="web">
+                    <div class="project-image-large" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-details">
+                        <div class="project-tag">Web</div>
+                        <h3>Solutions API Laravel</h3>
+                        <p>Développement d'API REST robustes avec Laravel, avec systèmes d'authentification, gestion de bases de données et documentation complète.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="contact.html" class="btn btn-small">Voir le projet</a>
+                            <a href="contact.html" class="btn btn-small btn-secondary">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Créations Design -->
+                <div class="project-card-large" data-category="design">
+                    <div class="project-image-large" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="project-details">
+                        <div class="project-tag">Design</div>
+                        <h3>Créations graphiques & Design</h3>
+                        <p>Réalisations de designs modernes pour divers supports : affiches, logos, bannières, maquettes UI/UX et identités visuelles complètes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Photoshop</span>
+                            <span class="tech-tag">UI/UX Design</span>
+                            <span class="tech-tag">Sérigraphie</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#!" class="btn btn-small gallery-trigger">Voir la galerie</a>
+                            <a href="contact.html" class="btn btn-small btn-secondary">Demander un design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - MIT APP Inventor -->
+                <div class="project-card-large" data-category="mobile">
+                    <div class="project-image-large" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="project-details">
+                        <div class="project-tag">Mobile</div>
+                        <h3>Applications MIT APP Inventor</h3>
+                        <p>Développement d'applications mobiles prototypes avec MIT APP Inventor, idéales pour le prototypage rapide et la validation de concepts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MIT APP Inventor</span>
+                            <span class="tech-tag">Prototypage</span>
+                            <span class="tech-tag">Mobile</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="contact.html" class="btn btn-small">En savoir plus</a>
+                            <a href="contact.html" class="btn btn-small btn-secondary">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Formation -->
+                <div class="project-card-large" data-category="design">
+                    <div class="project-image-large" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
+                    <div class="project-details">
+                        <div class="project-tag">Design</div>
+                        <h3>Formations & Sérigraphie</h3>
+                        <p>Programmes de formation en développement web, design et sérigraphie. Accompagnement personnalisé pour l'apprentissage des technologies modernes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Formation</span>
+                            <span class="tech-tag">Sérigraphie</span>
+                            <span class="tech-tag">Mentorat</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="services.html" class="btn btn-small">Voir les services</a>
+                            <a href="contact.html" class="btn btn-small btn-secondary">Réserver une session</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Intéressé par un projet similaire ?</h2>
+            <p>Parlons de votre idée et voyons comment je peux vous aider</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Commencer maintenant</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Développeur web passionné par la création d'expériences numériques modernes. Expertise en Laravel, React, Flutter et gestion de bases de données.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EL THEODOROS - Lomé, Togo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

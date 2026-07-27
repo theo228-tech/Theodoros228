@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EL THEODOROS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">EL THEODOROS</span>
+                </div>
+                
+                <nav class="nav-main">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="about.html" class="nav-link">À propos</a></li>
+                        <li><a href="projects.html" class="nav-link">Projets</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-moi</h1>
+            <p>Je serais ravi de discuter de votre projet</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Parlons de votre projet</h2>
+                    <p>Remplissez le formulaire ci-contre ou contactez-moi directement par les moyens ci-dessous.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:theodoros228pro@gmail.com">theodoros228pro@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Localisation</h4>
+                            <p>Lomé, Togo</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h4>Disponibilité</h4>
+                            <p>Réponse sous 24 heures</p>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 2rem;">Télécharger mon CV</h4>
+                    <div class="social-links-large">
+                        <a href="CV Theodore.pdf" class="social-link-large" download>Télécharger le CV (PDF)</a>
+                        <a href="Theodoros_cv.pdf" class="social-link-large" download>Télécharger le CV détaillé</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwvnebva" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="nom" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="telephone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="sujet" required>
+                                <option value="">-- Sélectionnez un sujet --</option>
+                                <option value="website">Création de site web</option>
+                                <option value="mobile">Application mobile</option>
+                                <option value="design">Design UI/UX</option>
+                                <option value="serigraphie">Sérigraphie</option>
+                                <option value="formation">Formation</option>
+                                <option value="other">Autre</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+                        <input type="hidden" name="_language" value="fr">
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button type="submit" class="btn btn-primary btn-large">Envoyer le message</button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Développeur web passionné par la création d'expériences numériques modernes. Expertise en Laravel, React, Flutter et gestion de bases de données.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EL THEODOROS - Lomé, Togo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
