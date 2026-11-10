@@ -16,29 +16,38 @@ themeToggle.addEventListener('click', () => {
 
 function updateThemeIcon() {
     const isDark = document.body.classList.contains('dark-theme');
-    themeToggle.innerHTML = isDark ? '☀️' : '🌙';
+    themeToggle.innerHTML = isDark
+        ? '<span class="theme-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>'
+        : '<span class="theme-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>';
 }
 
 const menuToggle = document.getElementById('menuToggle');
 const navMain = document.querySelector('.nav-main');
 
+function setMenuOpen(isOpen) {
+    navMain.classList.toggle('active', isOpen);
+    menuToggle.classList.toggle('active', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+}
+
 menuToggle.addEventListener('click', () => {
-    navMain.classList.toggle('active');
-    menuToggle.classList.toggle('active');
+    setMenuOpen(!navMain.classList.contains('active'));
 });
 
 document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        navMain.classList.remove('active');
-        menuToggle.classList.remove('active');
-    });
+    link.addEventListener('click', () => setMenuOpen(false));
 });
 
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-main') && !e.target.closest('.menu-toggle')) {
-        navMain.classList.remove('active');
-        menuToggle.classList.remove('active');
+        setMenuOpen(false);
     }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenuOpen(false);
 });
 
 const observerOptions = {
@@ -179,4 +188,56 @@ scrollTopButton.addEventListener('click', () => window.scrollTo({ top: 0, behavi
 document.addEventListener('DOMContentLoaded', () => {
     document.body.style.opacity = '0';
     document.body.style.animation = 'fadeIn 0.5s ease forwards';
+});
+
+// ===== Compteurs animes (section statistiques) =====
+const statCounters = document.querySelectorAll('.stat-number[data-target]');
+
+function animateCounter(element) {
+    const target = parseFloat(element.getAttribute('data-target'));
+    const suffix = element.getAttribute('data-suffix') || '';
+    const duration = 1500;
+    let startTime = null;
+
+    function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(target * eased);
+        element.textContent = value + suffix;
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        } else {
+            element.textContent = target + suffix;
+        }
+    }
+    requestAnimationFrame(step);
+}
+
+if (statCounters.length > 0) {
+    const counterObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.4 });
+    statCounters.forEach(counter => counterObserver.observe(counter));
+}
+
+// ===== Reveal des nouvelles sections (opacity uniquement pour garder les hovers) =====
+const revealObserver = new IntersectionObserver(function(entries, obs) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            obs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.process-step, .stat-card, .cert-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transition = 'opacity 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease';
+    revealObserver.observe(el);
 });

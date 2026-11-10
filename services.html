@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - EL THEODOROS</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="El.css">
 </head>
 <body>
@@ -11,10 +12,9 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">◆</span>
                     <span class="logo-text">EL THEODOROS</span>
                 </div>
-                <nav class="nav-main">
+                <nav class="nav-main" id="siteNav">
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Accueil</a></li>
                         <li><a href="about.html" class="nav-link">À propos</a></li>
@@ -25,9 +25,9 @@
                 </nav>
                 <div class="header-actions">
                     <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
-                        <span class="theme-icon">🌙</span>
+                        <span class="theme-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6.5 6.5 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span>
                     </button>
-                    <button class="menu-toggle" id="menuToggle">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="siteNav">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🌐</div>
+                    <div class="service-icon"><img src="assets/Développement Web & Mobile.jpg" alt="Web" class="icon-img"></div>
                     <h3>Développement Web</h3>
                     <p>Création de sites web et applications web modernes avec Laravel, React et PHP. APIs REST, CMS et plateformes sur mesure.</p>
                     <ul class="service-features">
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">📱</div>
+                    <div class="service-icon"><img src="assets/Développement Web & Mobile.jpg" alt="Mobile" class="icon-img"></div>
                     <h3>Développement Mobile</h3>
                     <p>Applications mobiles cross-platform avec Flutter & Dart. Prototypage rapide avec MIT APP Inventor.</p>
                     <ul class="service-features">
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
+                    <div class="service-icon"><img src="assets/Design UIUX & Sérigraphie.jpg" alt="Design" class="icon-img"></div>
                     <h3>Design UI/UX & Graphisme</h3>
                     <p>Conception d'interfaces utilisateur modernes. Création de logos, affiches, bannières et identités visuelles.</p>
                     <ul class="service-features">
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🖨️</div>
+                    <div class="service-icon"><img src="Design.png" alt="Créations en sérigraphie" class="icon-img"></div>
                     <h3>Sérigraphie</h3>
                     <p>Service de sérigraphie pour vêtements, supports textiles et divers matériaux. Créations personnalisées.</p>
                     <ul class="service-features">
@@ -96,7 +96,7 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">📚</div>
+                    <div class="service-icon"><img src="Formation.png" alt="Accompagnement et formation" class="icon-img"></div>
                     <h3>Formations & Mentorat</h3>
                     <p>Formations en développement web, design et sérigraphie. Accompagnement personnalisé.</p>
                     <ul class="service-features">
@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🗄️</div>
+                    <div class="service-icon"><img src="assets/Bases de données & Cloud.jpg" alt="Bases de données" class="icon-img"></div>
                     <h3>Bases de données & Cloud</h3>
                     <p>Conception et gestion de bases de données. Solutions cloud avec Firebase, PostgreSQL, MySQL et SQLite.</p>
                     <ul class="service-features">
@@ -116,6 +116,18 @@
                         <li>MySQL & SQLite</li>
                         <li>Firebase</li>
                         <li>Optimisation requêtes</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><img src="assets/Marketing Digital & Data.jpg" alt="Marketing" class="icon-img"></div>
+                    <h3>Marketing Digital & Data</h3>
+                    <p>Stratégie de campagne, planification de contenu, analyse des performances et reporting pour piloter votre visibilité.</p>
+                    <ul class="service-features">
+                        <li>Stratégie de campagne</li>
+                        <li>Planification de contenu</li>
+                        <li>KPI & tableaux de bord</li>
+                        <li>Reporting personnalisé</li>
                     </ul>
                 </div>
             </div>

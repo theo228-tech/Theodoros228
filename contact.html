@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - EL THEODOROS</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="El.css">
 </head>
 <body>
@@ -11,10 +12,9 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">◆</span>
                     <span class="logo-text">EL THEODOROS</span>
                 </div>
-                <nav class="nav-main">
+                <nav class="nav-main" id="siteNav">
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Accueil</a></li>
                         <li><a href="about.html" class="nav-link">À propos</a></li>
@@ -25,9 +25,9 @@
                 </nav>
                 <div class="header-actions">
                     <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
-                        <span class="theme-icon">🌙</span>
+                        <span class="theme-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6.5 6.5 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span>
                     </button>
-                    <button class="menu-toggle" id="menuToggle">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="siteNav">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -52,7 +52,7 @@
                     <p>Remplissez le formulaire ou contactez-moi directement.</p>
 
                     <div class="contact-item">
-                        <div class="contact-icon">📧</div>
+                        <div class="contact-icon"><img src="gmail.png" alt="Email" class="icon-svg" style="width: 2rem; height: 2rem;"></div>
                         <div class="contact-details">
                             <h4>Email</h4>
                             <a href="mailto:theodoros228pro@gmail.com">theodoros228pro@gmail.com</a>
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">📍</div>
+                        <div class="contact-icon"><img src="map.png" alt="Localisation" class="icon-svg" style="width: 2rem; height: 2rem;"></div>
                         <div class="contact-details">
                             <h4>Localisation</h4>
                             <p>Lomé, Togo</p>
@@ -68,7 +68,7 @@
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">⏰</div>
+                        <div class="contact-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
                         <div class="contact-details">
                             <h4>Disponibilité</h4>
                             <p>Réponse sous 24 heures</p>
@@ -81,10 +81,9 @@
                         <a href="https://github.com/theo228-tech" class="social-link-large" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
 
-                    <h4 style="margin-top: 2rem;">Télécharger mon CV</h4>
+                    <h4 style="margin-top: 2rem;">Un projet en tête ?</h4>
                     <div class="social-links-large">
-                        <a href="CV Theodore.pdf" class="social-link-large" download>Télécharger le CV (PDF)</a>
-                        <a href="Theodoros_cv.pdf" class="social-link-large" download>Télécharger le CV détaillé</a>
+                        <a href="#contactForm" class="social-link-large">M’écrire via le formulaire</a>
                     </div>
                 </div>
 

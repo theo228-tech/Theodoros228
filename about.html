@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - EL THEODOROS</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="El.css">
 </head>
 <body>
@@ -11,10 +12,9 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">◆</span>
                     <span class="logo-text">EL THEODOROS</span>
                 </div>
-                <nav class="nav-main">
+                <nav class="nav-main" id="siteNav">
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Accueil</a></li>
                         <li><a href="about.html" class="nav-link active">À propos</a></li>
@@ -25,9 +25,9 @@
                 </nav>
                 <div class="header-actions">
                     <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
-                        <span class="theme-icon">🌙</span>
+                        <span class="theme-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6.5 6.5 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span>
                     </button>
-                    <button class="menu-toggle" id="menuToggle">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="siteNav">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -49,7 +49,7 @@
             <div class="about-grid">
                 <div class="about-text">
                     <h2>Qui suis-je ?</h2>
-                    <p>Je suis <strong>ELOH KOSSIVI THEODORE</strong>, passionné par le développement web et la création d'expériences numériques modernes. Mon expertise couvre Laravel, React, Flutter et la gestion de bases de données.</p>
+                    <p>Je suis <strong>ELOH KOSSIVI THEODORE</strong>, passionné par le développement web et la création d'expériences numériques modernes. Mon expertise couvre Laravel, React, Flutter, la gestion de bases de données ainsi que le marketing digital : stratégie de campagne, planification de contenu, analyse de KPI et reporting.</p>
                     <h3>Mon approche</h3>
                     <p>Je conçois des solutions web modernes et efficaces, alliant créativité et technologie. Chaque projet est unique et mérite une solution sur mesure, de la conception à la réalisation.</p>
                     <h3>Valeurs</h3>
@@ -74,6 +74,7 @@
             <h2 class="section-title">Compétences techniques</h2>
             <div class="skills-grid">
                 <div class="skill-category">
+                    <img class="skill-category-image" src="assets/Développement Web & Mobile.jpg" alt="Développement web et mobile" loading="lazy">
                     <h3>Web & Mobile</h3>
                     <div class="skill-bars">
                         <div class="skill-item">
@@ -99,6 +100,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
+                    <img class="skill-category-image" src="assets/Bases de données & Cloud.jpg" alt="Bases de données et cloud" loading="lazy">
                     <h3>Bases de données & Cloud</h3>
                     <div class="skill-bars">
                         <div class="skill-item">
@@ -120,6 +122,33 @@
                     </div>
                 </div>
                 <div class="skill-category">
+                    <img class="skill-category-image" src="assets/Marketing Digital & Data.jpg" alt="Marketing digital et analyse de données" loading="lazy">
+                    <h3>Marketing Digital</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Stratégie marketing</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Planification de contenu</span><span class="skill-percent">80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Analyse de KPI</span><span class="skill-percent">75%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Reporting de campagnes</span><span class="skill-percent">75%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Réseaux sociaux</span><span class="skill-percent">70%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <img class="skill-category-image" src="Formation.png" alt="Formation et compétences complémentaires" loading="lazy">
                     <h3>Autres</h3>
                     <div class="skill-bars">
                         <div class="skill-item">
@@ -138,6 +167,44 @@
                             <div class="skill-label"><span>Sérigraphie</span><span class="skill-percent">50%</span></div>
                             <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="certs-section">
+        <div class="container">
+            <h2 class="section-title">Certification Marketing Digital</h2>
+            <p class="certs-intro">Un parcours certifiant couvrant les quatre piliers du marketing digital moderne :</p>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+                    <div class="cert-body">
+                        <h3>Stratégie marketing</h3>
+                        <p>Objectifs, audiences, positionnement et choix des canaux.</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-8.5z"></path></svg></div>
+                    <div class="cert-body">
+                        <h3>Création de contenus</h3>
+                        <p>Planification des contenus et calendrier éditorial.</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
+                    <div class="cert-body">
+                        <h3>Analyse de KPI</h3>
+                        <p>Mesure des performances et optimisation des campagnes.</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="8" x2="21" y2="8"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="16" x2="21" y2="16"></line></svg></div>
+                    <div class="cert-body">
+                        <h3>Reporting</h3>
+                        <p>Tableaux de bord et rapports de suivi des campagnes.</p>
                     </div>
                 </div>
             </div>
